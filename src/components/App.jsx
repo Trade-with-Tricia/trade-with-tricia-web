@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './media/logo.svg';
-import mainLogo from './media/tradeWithTriciaMainLogo.png';
-import smallLogo from './media/tradeWithTriciaSmallLogo.png';
-import './App.css';
+import logo from '../media/logo.svg';
+import mainLogo from '../media/tradeWithTriciaMainLogo.png';
+import smallLogo from '../media/tradeWithTriciaSmallLogo.png';
+import '../style/App.css';
 import ContactInfoForm from './ContactInfoForm';
 import AboutPanel from './AboutPanel';
 import { PageHeader, Grid, Row, Col, Image, Button } from 'react-bootstrap';
