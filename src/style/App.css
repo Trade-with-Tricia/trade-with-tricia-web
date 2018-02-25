@@ -1,5 +1,8 @@
-.App {
-  text-align: left;
+.top-level-div, body, html {
+  font-family: 'Montserrat', sans-serif;
+  /*font-weight: bold;*/
+  /*font-family: "Open Sans", sans-serif;*/
+  font-weight: 700;
 }
 
 .App-logo {
@@ -7,10 +10,41 @@
   height: 80px;
 }
 
+.logo-alignment {
+  padding: 0;
+}
+
 .App-header {
-  background-color: #222;
-  height: 75px;
-  color: white;
+  height: 7rem;
+  width: 100%;
+  /*opacity: 0.9;*/
+  text-align: center;
+  padding: 2rem;
+  /*padding-top: 3rem;*/
+  font-size: 1.75rem;
+  position: fixed;
+  top: 0;
+  background: white;
+  transition: all 0.5s;
+  box-shadow: none;
+  z-index: 100;
+  white-space: nowrap;
+}
+
+.App-header-scroll {
+  height: 7rem;
+  width: 100%;
+  /*opacity: 0.9;*/
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.75rem;
+  position: fixed;
+  top: 0;
+  background: white;
+  transition: all 0.5s;
+  box-shadow: 0 0.2rem 2rem 0 rgba(30,34,38,.18);
+  z-index: 100;
+  white-space: nowrap;
 }
 
 .App-body {
@@ -33,4 +67,162 @@
 .small-logo-style {
   max-width: 10px;
   max-height: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a:focus {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.button {
+  text-decoration: none;
+  background: white;
+  border: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+.views {
+  padding-top: 7rem;
+  /*font-family: 'Montserrat', sans-serif;*/
+}
+
+.view {
+  height: 60rem;
+}
+
+.view1 {
+  /*background: #FF3709;*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: -2rem;
+}
+
+.view2 {
+  /*background-color: #00ADD5;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  padding-top: 8rem;
+}
+
+.view3 {
+  /*background-color: #22D6FF;*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 8rem;
+}
+
+.view4 {
+  height: 64rem;
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-content: center;
+  padding-top: 8rem;
+}
+
+.view-title-color {
+  color: lightcoral;
+}
+
+.view4-title {
+  width: 130rem;
+  height: 15rem;
+  margin-top: 20rem;
+  text-align: center;
+}
+
+.view2-title {
+  width: 130rem;
+  /*height: 7rem;*/
+  text-align: center;
+}
+
+.view4-subtitle {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.who-we-are-par {
+  font-size: 1.75rem;
+  line-height: 3.25rem;
+}
+
+.video-alignment {
+  /*margin-top: -3rem;*/
+  height: 56rem;
+  width: 130rem;
+}
+
+.member-description {
+  height: 30rem;
+  width: 40rem;
+}
+
+.member-photo-style {
+  width: 15rem;
+  float: left;
+}
+
+.member-paragraph {
+  float: right;
+  width: 23rem;
+  padding-right: 3rem;
+}
+
+.how-to-use-steps {
+  width: 60rem;
+  height: 40rem;
+  margin-top: 2rem;
+}
+
+.how-to-use-movie {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.screenshot-size {
+  width: 30rem;
+  max-height: 45rem;
+}
+
+/*.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {*/
+  /*color: white;*/
+  /*background-color: rgb(206, 45, 56);*/
+/*}*/
+
+.steps-content-styling {
+  font-size: 2rem;
+}
+
+.list-elem-line-space {
+  padding-bottom: 2rem;
+}
+
+.first-time-user-note {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-top: -2rem;
 }
