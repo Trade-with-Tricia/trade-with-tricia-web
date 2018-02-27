@@ -1,6 +1,12 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import {Image} from 'react-bootstrap';
+import CharlesImage from '../../../media/CharlesImage.JPG';
+import MichaelImage from '../../../media/MichaelImage.JPEG';
+import ColeImage from '../../../media/ColeImage.jpg';
+import AvayaImage from '../../../media/AvayaImage.jpeg';
+import JaredImage from '../../../media/JaredImage.jpeg';
+import NateImage from '../../../media/NateImage.jpeg';
 
 
 import View4 from '../View4';
@@ -22,6 +28,12 @@ describe('render', () => {
         expect(component.find('.member-description').getElements().length).toBe(6);
         expect(component.find('.member-paragraph').getElements().length).toBe(6);
         expect(component.find(Image).getElements().length).toBe(6);
+        expect(component.find(Image).at(0).props().src).toBe(ColeImage);
+        expect(component.find(Image).at(1).props().src).toBe(CharlesImage);
+        expect(component.find(Image).at(2).props().src).toBe(NateImage);
+        expect(component.find(Image).at(3).props().src).toBe(AvayaImage);
+        expect(component.find(Image).at(4).props().src).toBe(MichaelImage);
+        expect(component.find(Image).at(5).props().src).toBe(JaredImage);
     });
 
 

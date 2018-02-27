@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import HeaderLogo from '../media/TradeWithTriciaHeaderLogo.png';
 
 
 class Header extends Component {
@@ -8,11 +9,13 @@ class Header extends Component {
             <div className="App-header">
                 <Grid>
                     <Row>
-                        <Col xsOffset={1} xs={2} className="logo-alignment">
-                            <a href="#home">Trade With Tricia</a>
+                        <Col xs={2} className="logo-alignment">
+                            <a href="#home">
+                                <img className="App-logo" src={HeaderLogo} height="70"/>
+                            </a>
                         </Col>
-                        <Col xsOffset={1} xs={2}>
-                            <a href="#home">What Is TwT?</a>
+                        <Col xsOffset={2} xs={2}>
+                            <a href="#home">What Is TWT</a>
                         </Col>
                         <Col xs={2}>
                             <a href="#howtouse">How To Use</a>

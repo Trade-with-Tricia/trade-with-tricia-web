@@ -9,17 +9,18 @@ class HowToUseSteps extends Component {
                 <Row className="clearfix">
                     <Col sm={4}>
                         <Nav bsStyle="pills" stacked>
-                            <NavItem eventKey="first">Before</NavItem>
-                            <NavItem eventKey="second">Buy</NavItem>
-                            <NavItem eventKey="third">Sell</NavItem>
-                            <NavItem eventKey="fourth">Trade</NavItem>
+                            <NavItem id="firstTab" eventKey="first">Get Started</NavItem>
+                            <NavItem id="secondTab" eventKey="second">Buy</NavItem>
+                            <NavItem id="thirdTab" eventKey="third">Sell</NavItem>
+                            <NavItem id="fourthTab" eventKey="fourth">Trade</NavItem>
                         </Nav>
                     </Col>
                     <Col sm={8} className="steps-content-styling">
                         <Tab.Content animation>
                             <Tab.Pane eventKey="first">
-                                <p>
-                                    Store Tricia's number in you contacts:
+                                <p className="tricia-number-style">
+                                    Text Tricia at XXX-XXX-XXXX
+                                    <p className="disclaimer-note">(currently under development, stay tuned!)</p>
                                 </p>
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
@@ -31,7 +32,7 @@ class HowToUseSteps extends Component {
                                     <li className="list-elem-line-space">"I'm trying to purchase a book"</li>
                                     <li className="list-elem-line-space">"I'm looking for a book"</li>
                                 </ul>
-                                <p className="first-time-user-note">Note: If you are a first time user, you will be prompted to agree with our T&C</p>
+                                <p className="disclaimer-note">Note: If you are a first time user, you will be prompted to agree with our T&C</p>
                             </Tab.Pane>
                             <Tab.Pane eventKey="third">
                                 <p>If you're trying to sell a book, Tricia can store your book and notify you if anyone would like to buy it</p>

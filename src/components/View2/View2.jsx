@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import HowToUseSteps from './HowToUseSteps';
-import SellScreenshot from '../../media/SellProcessScreenshot.jpg';
 import DemoVid from '../../media/Sprint3Demo.mov';
 
 class View2 extends Component {
