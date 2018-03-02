@@ -46,13 +46,13 @@ class HowToUseSteps extends Component {
                                 <p className="first-time-user-note">Note: If you are a first time user, you will be prompted to agree with our T&C</p>
                             </Tab.Pane>
                             <Tab.Pane eventKey="fourth">
-                                <p>If you'd like to trade your book, Tricia can store your book and notify you if anyone would like to buy it</p>
+                                <p>If you'd like to trade your book, Tricia can store your book and notify you if anyone would like to trade or buy it</p>
                                 <p>Here are some example phrases you could text:</p>
                                 <ul>
-                                    <li className="list-elem-line-space">"Hey Tricia I would like to sell a book"</li>
-                                    <li className="list-elem-line-space">"Hey Tricia I would like to sell a book with ISBN 123456789"</li>
-                                    <li className="list-elem-line-space">"I'm trying to unload a book"</li>
-                                    <li className="list-elem-line-space">"I'm looking to sell a book"</li>
+                                    <li className="list-elem-line-space">"Hey Tricia I would like to trade a book"</li>
+                                    <li className="list-elem-line-space">"I would like to trade a book with ISBN 123456789"</li>
+                                    <li className="list-elem-line-space">"I'm trying to trade a book"</li>
+                                    <li className="list-elem-line-space">"I'm looking to exchange a book"</li>
                                 </ul>
                                 <p className="first-time-user-note">Note: If you are a first time user, you will be prompted to agree with our T&C</p>
                             </Tab.Pane>
