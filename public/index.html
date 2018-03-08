@@ -61,12 +61,16 @@
         });
     </script>
 
+    <!--Script to add or remove css classes for the header component based on when user scrolls from top-->
+    <!--TODO: implement this script's functionality in Header component-->
     <script>
         $(function() {
             var header = $(".App-header");
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
 
+                //Once the user scrolls from the top, want to give a little bottom-border shadow to make header bar
+                //more noticeable
                 if (scroll > 0) {
                     header.removeClass('App-header').addClass("App-header-scroll");
                 } else {
