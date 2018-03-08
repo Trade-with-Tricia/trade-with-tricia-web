@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
+    <!--<meta name="theme-color" content="#000000">-->
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -19,7 +19,68 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon_package_v0.16/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon_package_v0.16/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="%PUBLIC_URL%/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Montserrat Font import-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--Fira Sans Font import-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Smooth scrolling script-->
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <!--Script to add or remove css classes for the header component based on when user scrolls from top-->
+    <!--TODO: implement this script's functionality in Header component-->
+    <script>
+        $(function() {
+            var header = $(".App-header");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                //Once the user scrolls from the top, want to give a little bottom-border shadow to make header bar
+                //more noticeable
+                if (scroll > 0) {
+                    header.removeClass('App-header').addClass("App-header-scroll");
+                } else {
+                    header.removeClass("App-header-scroll").addClass('App-header');
+                }
+            });
+        });
+    </script>
+
+    <title>Trade with Tricia</title>
   </head>
   <body>
     <noscript>

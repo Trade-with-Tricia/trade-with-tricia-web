@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FormGroup, ControlLabel, FormControl, HelpBlock } from 'react-bootstrap';
 
+//TODO: implent this as Tier 3 Feature if time
 class ContactInfoForm extends Component {
   constructor() {
     super();
