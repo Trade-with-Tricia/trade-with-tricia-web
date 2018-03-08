@@ -3,10 +3,10 @@ import {shallow} from 'enzyme';
 import App from '../App';
 
 import Header from '../Header';
-import View1 from '../View1/View1';
-import View2 from '../View2/View2';
-import View3 from '../View3/View3';
-import View4 from '../View4/View4';
+import View1 from '../WhatIsTwTView/View1';
+import View2 from '../HowToUseView/View2';
+import View3 from '../OurStoryView/View3';
+import View4 from '../WhoWeAreView/View4';
 
 const createComponent = () => {
     return (<App/>);
