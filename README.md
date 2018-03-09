@@ -1,5 +1,7 @@
 ## Trade with Tricia React SPA
 
+#### Website is live at tradewithtricia.com
+
 This is the ReactJS project for the Trade with Tricia website developed
 by the Trade with Tricia capstone team at the University 
 of Portland. To contribute, please ALWAYS branch off develop then raise PR
@@ -21,6 +23,7 @@ To run unit tests:
 
 1. Run ```npm test```
 
+2. To view code coverage, run ```npm test -- --coverage```
 
 To deploy website:
 
